@@ -1,0 +1,20 @@
+<div>
+    <input type="text" placeholder="Name" #inputEl>
+    <br>
+    <input type="text" placeholder="Name" #inputEl>
+    <br>
+    <input type="text" placeholder="Name" #inputEl>
+
+    <button type="submit" (click)="show()">Submit</button>
+
+    <p>{{output}}</p>
+    
+</div>
+
+<p>this is visible to web page</p>
+
+<ng-template #reference>
+    <p>but this is not, in order to show this you have to give a reference name and then use it</p>
+</ng-template>
+
+<div *ngTemplateOutlet="reference"></div>
