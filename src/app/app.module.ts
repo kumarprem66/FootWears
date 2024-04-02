@@ -15,6 +15,12 @@ import { ProductComponent } from './container/product-list/product/product.compo
 import { FilterComponent } from './container/product-list/filter/filter.component';
 import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 import { ConceptComponent } from './concept/concept.component';
+import { ToggleComponent } from './toggle/toggle.component';
+import { FeaturedBrandComponent } from './container/featured-brand/featured-brand.component';
+import { SetBackground } from './CustomDirectives/SetBackground';
+import { HighlightDirective } from './CustomDirectives/highlight.directive';
+import { ApphoverDirective } from './CustomDirectives/apphover.directive';
+import { DisabledDirectiveDirective } from './CustomDirectives/disabled-directive.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,13 @@ import { ConceptComponent } from './concept/concept.component';
     ProductComponent,
     FilterComponent,
     ProductDetailComponent,
-    ConceptComponent
+    ConceptComponent,
+    ToggleComponent,
+    FeaturedBrandComponent,
+    SetBackground,
+    HighlightDirective,
+    ApphoverDirective,
+    DisabledDirectiveDirective
   ],
   imports: [
     BrowserModule,

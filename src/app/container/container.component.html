@@ -22,4 +22,22 @@
     <app-search (searchTextChanged)="setSearchText($event)"></app-search>
     <app-product-list [searchText]="searchText"  #productListComponent></app-product-list>
     <app-product-detail *ngIf="productListComponent.selectedProduct" [productListCom]="productListComponent"></app-product-detail>
+
+    <div class="ekart-featured-products">
+        <div class="ekart-featured-product-heading">
+            <h3>Latest Arrival in Popular Brand</h3>
+        </div>
+        <app-featured-brand>
+            <h3 class="title">New Arrival in Nike</h3>
+            <button class="call-to-action">Explore Nike</button>
+        </app-featured-brand>
+        <app-featured-brand>
+            <h3 class="title">New Arrival in Adidas</h3>
+            <button class="call-to-action">Explore Adidas</button>
+        </app-featured-brand>
+        <app-featured-brand>
+            <h3 class="title">New Arrival in Reebok</h3>
+            <button class="call-to-action">Explore Reebok</button>
+        </app-featured-brand>
+    </div>
 </div>

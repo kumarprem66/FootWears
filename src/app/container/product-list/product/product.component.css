@@ -70,3 +70,16 @@
     color: #999;
     margin-top: 7px;
 }
+
+.highlight-product{
+    --webbit-box-shadow: 0 0 1px 3px #000 inset;
+    --moz-box-shadow: 0 0 1px 3px #000 inset;
+    border: #efefef;
+    box-shadow: 10px 10px 10px #cccccc;
+    transform: scale(1.05);
+    
+}
+.disable-out-of-stock-product{
+    background-color: #282828;
+    opacity: 0.5;
+}

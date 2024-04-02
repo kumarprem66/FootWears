@@ -11,9 +11,9 @@
             <h2>{{product.name}}</h2>
         </div>
         <div class="ekart-product-detail-gbc">
-            <span>{{product.gender}}</span>
-            <span>NIKE</span>
-            <span>SPORTS</span>
+            <span  [textColor]="'white'" [setBackground]="'red'">{{product.gender}}</span>
+            <span  [textColor]="'white'" [setBackground]="'yellow'">{{product.brand}}</span>
+            <span  [textColor]="'white'" [setBackground]="'black'" >{{product.category}}</span>
         </div>
         <div class="ekart-product-detail-price">
             <p>
@@ -57,7 +57,7 @@
 
         <button class="btn-add-to-cart" *ngIf="product.is_in_inventory; else notifyme">ADD TO CART</button>
         <ng-template #notifyme>
-            <button class="btn-add-to-cart">Notify Me</button>
+            <button class="btn-add-to-cart" appApphover >Notify Me</button>
         </ng-template>
         
         
